@@ -10,6 +10,9 @@ Resources:
       ImageId: ami-0fff1b9a61dec8a5f
       SecurityGroups:
         - !Ref MySecurityGroup
+      Tags:
+        - Key: Name
+          Value: MyInstance  # Set the instance name to MyInstance
 
   MySecurityGroup:
     Type: 'AWS::EC2::SecurityGroup'
@@ -25,3 +28,4 @@ Parameters:
   KeyPairName:
     Type: String
     Description: Name of an existing EC2 KeyPair to SSH into the instance
+
