@@ -1,0 +1,6 @@
+***Shorten the terminal prompt:
+echo 'export PROMPT_DIRTRIM=1' >> ~/.bashrc
+source ~/.bashrc
+
+***
+
